@@ -12,7 +12,7 @@ export default function Skills() {
     <section className="sheet" id={mode === 'render' ? 'skills' : undefined}>
       <header className="sheet-head" style={{ position: 'relative' }}>
         <p className="sheet-tag mono">SHT 05 — MATERIALS LIST</p>
-        <h2 className="sheet-title stroke">Bill of materials</h2>
+        <h2 className="sheet-title stroke">Skills</h2>
         <Note style={{ right: 0, bottom: '8px' }}>B.O.M. — 4 CLASSES</Note>
       </header>
 
