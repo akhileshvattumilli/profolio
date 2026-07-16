@@ -34,7 +34,7 @@ export default function About() {
     <section className="sheet" id={mode === 'render' ? 'about' : undefined}>
       <header className="sheet-head">
         <p className="sheet-tag mono">SHT 02 — ABOUT</p>
-        <h2 className="sheet-title stroke">General notes</h2>
+        <h2 className="sheet-title stroke">Summary</h2>
       </header>
 
       <div className="about-grid">
