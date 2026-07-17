@@ -90,11 +90,11 @@ export const projects = [
     href: 'https://github.com/akhileshvattumilli',
   },
   {
-    name: '[PLACEHOLDER — Project Three]',
-    problem: '[PLACEHOLDER — one-line problem statement]',
-    tags: ['Python', 'FastAPI'],
+    name: 'Hiring Agent — Resume Evaluation',
+    problem: 'An AI hiring agent that ingests a PDF resume and returns a structured intelligence report for candidate evaluation.',
+    tags: ['AI', 'Next.js'],
     size: 'sm',
-    href: 'https://github.com/[PLACEHOLDER]',
+    href: 'https://hiring-agent-eval-ui.vercel.app/',
   },
   {
     name: '[PLACEHOLDER — Project Four]',
