@@ -95,6 +95,7 @@ export const projects = [
     tags: ['AI', 'Next.js'],
     size: 'sm',
     href: 'https://hiring-agent-eval-ui.vercel.app/',
+    github: 'https://github.com/akhileshvattumilli/hiring-agent-app',
   },
   {
     name: '[PLACEHOLDER — Project Four]',

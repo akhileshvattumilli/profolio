@@ -62,23 +62,43 @@ export default function Projects() {
       </article>
 
       <div className="bento">
-        {projects.map((p, i) => (
-          <a
-            key={p.name}
-            className={`plate plate-cell size-${p.size} reveal ${['', 'reveal--t', 'reveal--r', 'reveal--b'][i % 4]}`}
-            href={p.href}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <p className="fig-tag mono">FIG. {i + 2}</p>
-            <span className="plate-open mono" aria-hidden="true">
-              OPEN ↗
-            </span>
-            <h3 className="plate-name">{p.name}</h3>
-            <p className="plate-desc">{p.problem}</p>
-            <p className="plate-stack mono">{p.tags.join(' · ')}</p>
-          </a>
-        ))}
+        {projects.map((p, i) =>
+          p.github ? (
+            <article
+              key={p.name}
+              className={`plate plate-cell size-${p.size} reveal ${['', 'reveal--t', 'reveal--r', 'reveal--b'][i % 4]}`}
+            >
+              <p className="fig-tag mono">FIG. {i + 2}</p>
+              <h3 className="plate-name">{p.name}</h3>
+              <p className="plate-desc">{p.problem}</p>
+              <p className="plate-stack mono">{p.tags.join(' · ')}</p>
+              <p className="plate-links mono">
+                <a href={p.github} target="_blank" rel="noreferrer">
+                  SOURCE ↗
+                </a>
+                <a href={p.href} target="_blank" rel="noreferrer">
+                  LIVE ↗
+                </a>
+              </p>
+            </article>
+          ) : (
+            <a
+              key={p.name}
+              className={`plate plate-cell size-${p.size} reveal ${['', 'reveal--t', 'reveal--r', 'reveal--b'][i % 4]}`}
+              href={p.href}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <p className="fig-tag mono">FIG. {i + 2}</p>
+              <span className="plate-open mono" aria-hidden="true">
+                OPEN ↗
+              </span>
+              <h3 className="plate-name">{p.name}</h3>
+              <p className="plate-desc">{p.problem}</p>
+              <p className="plate-stack mono">{p.tags.join(' · ')}</p>
+            </a>
+          )
+        )}
       </div>
     </section>
   )
