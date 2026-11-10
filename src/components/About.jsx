@@ -11,16 +11,18 @@ function SpecCard() {
         {'{\n'}
         {'  "name": '}
         <span className="spec-v">"{p.name}"</span>
-        {',\n  "location": '}
-        <span className="spec-v">"{p.location}"</span>
-        {',\n  "currentlyBuilding":\n    '}
-        <span className="spec-v">"{p.currentlyBuilding}"</span>
+        {',\n  "education": '}
+        <span className="spec-v">"{p.education}"</span>
+        {',\n  "degree":\n    '}
+        <span className="spec-v">"{p.degree}"</span>
+        {',\n  "graduation": '}
+        <span className="spec-v">"{p.graduation}"</span>
         {',\n  "interests": ['}
         <span className="spec-v">"{p.interests[0]}"</span>
         {', '}
         <span className="spec-v">"{p.interests[1]}"</span>
-        {'],\n  "coffee": '}
-        <span className="spec-v">{String(p.coffee)}</span>
+        {'],\n  "coursework":\n    '}
+        <span className="spec-v">"{p.coursework}"</span>
         {'\n}'}
       </pre>
       <Note style={{ right: 0, top: '-24px' }}>MIME — APPLICATION/JSON</Note>

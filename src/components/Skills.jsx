@@ -2,7 +2,7 @@ import { useMode } from '../mode.js'
 import { skills } from '../content.js'
 import { Note } from './BpBits.jsx'
 
-const PART_PREFIX = { Languages: 'LNG', Frameworks: 'FWK', 'Cloud & DevOps': 'OPS', Tools: 'TLS' }
+const PART_PREFIX = { Languages: 'LNG', 'AI / ML': 'AI', 'Frameworks & Backend': 'FWK', 'Cloud & DevOps': 'OPS', Databases: 'DB', 'Apple & Mobile': 'MOB' }
 
 // Skills as a bill of materials — a real table, not a tag cloud.
 export default function Skills() {
@@ -13,7 +13,7 @@ export default function Skills() {
       <header className="sheet-head" style={{ position: 'relative' }}>
         <p className="sheet-tag mono">SHT 05 — MATERIALS LIST</p>
         <h2 className="sheet-title stroke">Skills</h2>
-        <Note style={{ right: 0, bottom: '8px' }}>B.O.M. — 4 CLASSES</Note>
+        <Note style={{ right: 0, bottom: '8px' }}>B.O.M. — 6 CLASSES</Note>
       </header>
 
       <table className="bom reveal reveal--t">

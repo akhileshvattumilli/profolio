@@ -35,7 +35,7 @@ export default function Contact() {
         </a>
       </p>
 
-      <p className="contact-open">Currently open to {identity.openTo}</p>
+      <p className="contact-open">Interested in discussing software, AI, or building useful tools? Get in touch.</p>
 
       <div className="titleblock reveal reveal--b" style={{ position: 'relative' }}>
         <Note style={{ right: 0, top: '-24px' }}>TITLE BLOCK — 6 FIELDS</Note>

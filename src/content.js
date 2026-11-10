@@ -1,147 +1,92 @@
-// ---------------------------------------------------------------------------
-// All personal content lives here. Replace every [PLACEHOLDER] value —
-// the design never needs to be touched.
-// ---------------------------------------------------------------------------
-
+// Portfolio content is grounded in Akhilesh's current resume.
 export const identity = {
   firstName: 'Akhilesh',
   lastName: 'Vattumilli',
   role: 'Software Engineer',
-  tagline:
-    "I build across the stack — from on-device ML on iOS to particle-accelerator simulations — currently a CS student at Texas A&M.",
+  tagline: 'I build useful software across AI, cloud, and systems — from tools for engineers to on-device intelligence. I study computer science at Texas A&M.',
   email: 'akhileshvattumilli@gmail.com',
   github: 'https://github.com/akhileshvattumilli',
   linkedin: 'https://linkedin.com/in/akhileshvattumilli',
-  openTo: '[PLACEHOLDER — fill in later]',
 }
 
 export const about = {
   paragraphs: [
-    "I'm a Computer Science student at Texas A&M University (Class of 2028, GPA 3.82), pulled toward software by how much leverage a well-built system gives you — from a couple hundred lines to something serving thousands of people.",
-    "Lately I've been working across the stack: shipping a React Native app for medical students, fine-tuning an LLM with LoRA and RAG on GCP Vertex AI, and building a Python ray-tracing engine for a nuclear particle accelerator at the Texas A&M Cyclotron Institute.",
-    '[PLACEHOLDER — sentence 4. Something human — what you do away from the keyboard.]',
+    "I'm a computer science student at Texas A&M University, with AI in Business and an expected graduation in May 2028. I'm drawn to software because an idea can become a working system that changes what someone is able to do.",
+    "I've built AI-powered engineering tools, cloud research workflows, mobile applications for students, and a simulation engine for a particle accelerator. I enjoy understanding the people behind a problem and making careful technical decisions to solve it.",
+    'My projects explore efficient tooling for AI coding agents and private, on-device machine learning. Across my work, I care about dependable systems, performance, and measuring whether an improvement makes a difference.',
   ],
   profileObject: {
     name: 'Akhilesh Vattumilli',
-    location: '[PLACEHOLDER]',
-    currentlyBuilding: 'A real-time collaborative document editor with AI-assisted writing workflows',
-    interests: ['[PLACEHOLDER]', '[PLACEHOLDER]'],
-    coffee: true,
+    education: 'Texas A&M University',
+    degree: 'B.S. Computer Science, AI in Business',
+    graduation: 'May 2028 (expected)',
+    interests: ['AI and machine learning', 'Software systems'],
+    coursework: 'Data Structures & Algorithms, Computer Systems, Foundations of Software Engineering, Design and Analysis of Algorithms, Computer Organization, OOP, Machine Learning, Parallel Computing',
   },
 }
 
 export const experience = [
   {
-    company: 'Global Shop Solutions',
-    role: 'Software Engineering Intern',
-    dates: 'May 2026 — August 2026',
-    year: '2026',
+    company: 'Global Shop Solutions', role: 'Software Engineer Intern', dates: 'June 2026 — August 2026 · The Woodlands, TX',
     bullets: [
-      'Incoming SWE intern on the core ERP platform team; contributing to production systems serving manufacturing clients across 25+ countries',
+      'Deployed a microservice using vision-language models and RAG to diagnose regression-test failures across 150+ test VMs, cutting developer investigation time by over 40%.',
+      'Refactored core ERP code from C# to Go, reducing startup time by 80% on a platform serving 50,000 users.',
+      'Mined CI logs into 1.1M+ code-to-test links to identify affected tests, cutting QA testing time by 40%.',
+      'Architected a CLI that let AI agents execute internal app-management workflows, cutting token use by 90%.',
     ],
   },
   {
-    company: 'Texas A&M University College of Medicine',
-    role: 'Full Stack & Mobile Development Intern',
-    dates: 'February 2026 — May 2026',
-    year: '2026',
+    company: 'Amazon', role: 'Software Engineer (Contract)', dates: 'January 2026 — May 2026 · College Station, TX',
     bullets: [
-      'Shipped a React Native pharmacology learning app on AWS (Lambda, DynamoDB, S3) adopted by 200+ medical students, consolidating 3 separate study tools into one adaptive platform',
-      'Built an AI question-generation pipeline (Python + LLM APIs) that produces personalized practice sets from performance history, cutting manual content-authoring time by 80%',
+      'Built an AWS ETL pipeline with Lambda, Kinesis, and API Gateway to ingest and process 6,000+ space-sustainability documents, reducing manual research effort by 40% for Amazon Leo engineers.',
+      'Developed Bedrock-powered research workflows to identify relevant themes, emerging trends, and high-priority insights, accelerating analysis turnaround by 30%.',
+      'Automated Docker deployments to AWS Fargate through GitHub Actions, cutting release cycle time by 25%.',
     ],
   },
   {
-    company: 'Texas A&M University — HOPE Mentorship Platform',
-    role: 'Software Engineer Intern',
-    dates: 'June 2025 — August 2025',
-    year: '2025',
+    company: 'Texas A&M University College of Medicine', role: 'Full Stack Developer Intern', dates: 'January 2026 — May 2026 · Bryan, TX',
     bullets: [
-      'Fine-tuned Gemma 3n E2B on GCP Vertex AI with LoRA and RAG grounding, reducing inference cost by $1,000+/month while improving response relevance for academic and career guidance queries',
-      'Architected Node.js/Express REST services containerized with Docker and deployed on GCP Cloud Run, enabling zero-downtime releases and auto-scaling to 500+ concurrent users',
+      'Shipped a React Native pharmacology app on AWS using Lambda, DynamoDB, and S3, adopted by 200+ medical students.',
+      'Developed an adaptive AI question-generation pipeline with Python and LLM APIs, reducing manual authoring by 80%.',
     ],
   },
   {
-    company: 'Texas A&M Cyclotron Institute',
-    role: 'Software Engineer',
-    dates: 'January 2025 — December 2025',
-    year: '2025',
+    company: 'AGGIES Lab', role: 'AI Engineer Intern', dates: 'June 2025 — August 2025 · Dallas, TX',
     bullets: [
-      'Engineered a Python ray-tracing simulation engine for a nuclear particle accelerator, modeling photon trajectories across 100,000+ datasets at 97%+ accuracy, eliminating $70,000 in physical prototyping costs',
-      'Built a JavaScript visualization dashboard with REST endpoints and automated data-refresh pipelines, cutting detector design iteration cycles from days to hours for research physicists',
+      'Led development of a mobile mentorship app offering university students personalized academic guidance.',
+      'Implemented RAG with Gemini and ChromaDB, embedding 1,000+ academic documents for vector search.',
+      'Built automated evaluations and regression tests for 650 benchmark queries, improving AI response accuracy by 23%.',
+      'Deployed a FastAPI backend on AWS EC2 with S3 and CloudWatch, serving a React Native app via API Gateway.',
+    ],
+  },
+  {
+    company: 'Texas A&M Cyclotron Institute', role: 'Undergraduate Researcher', dates: 'January 2025 — December 2025 · College Station, TX',
+    bullets: [
+      'Engineered a Python ray-tracing simulation engine for a nuclear particle accelerator, modeling photon trajectories across 100,000+ datasets at 97%+ accuracy and eliminating $70,000 in physical prototyping costs.',
     ],
   },
 ]
 
 export const featuredProject = {
-  name: 'AI-Assisted Collaborative Docs Platform',
-  problem:
-    'A real-time collaborative document editor with AI-assisted writing workflows, tuned for low backend latency and high uptime under concurrent load.',
-  stack: ['Django', 'Next.js', 'PostgreSQL', 'WebSockets'],
-  github: 'https://github.com/akhileshvattumilli/DocAi',
-  demo: 'https://[PLACEHOLDER].dev',
+  name: 'Agentic Terminal',
+  problem: 'A Rust-based terminal system for AI coding agents that shapes raw command output into compact, structured payloads, reducing token use by up to 50%. Rewriting its core from Node.js to Rust cut per-command overhead from approximately 50–120 ms to 0.5 ms, roughly a 100× reduction.',
+  stack: ['Rust', 'Windows ConPTY', 'MCP'],
 }
 
 export const projects = [
   {
     name: 'Ambient — iOS Contextual Intelligence',
-    problem: 'An iOS app that infers user context on-device with a Core ML classifier at <10ms latency and zero server calls, preserving full data privacy.',
-    tags: ['Swift', 'SwiftUI', 'Core ML'],
+    problem: 'An iOS app that uses a Create ML-trained classifier and Core ML to infer user context across five categories in under 10 ms. Inference runs on-device with zero server calls, keeping data private.',
+    tags: ['Swift', 'SwiftUI', 'Core ML', 'Create ML'],
     size: 'lg',
-    href: 'https://github.com/akhileshvattumilli',
-  },
-  {
-    name: 'Hiring Agent — Resume Evaluation',
-    problem: 'An AI hiring agent that ingests a PDF resume and returns a structured intelligence report for candidate evaluation.',
-    tags: ['AI', 'Next.js'],
-    size: 'sm',
-    href: 'https://hiring-agent-eval-ui.vercel.app/',
-    github: 'https://github.com/akhileshvattumilli/hiring-agent-app',
-  },
-  {
-    name: '[PLACEHOLDER — Project Four]',
-    problem: '[PLACEHOLDER — one-line problem statement]',
-    tags: ['React', 'WebGL'],
-    size: 'sm',
-    href: 'https://github.com/[PLACEHOLDER]',
-  },
-  {
-    name: '[PLACEHOLDER — Project Five]',
-    problem: '[PLACEHOLDER — one-line problem statement]',
-    tags: ['Rust', 'CLI'],
-    size: 'sm',
-    href: 'https://github.com/[PLACEHOLDER]',
-  },
-  {
-    name: '[PLACEHOLDER — Project Six]',
-    problem: '[PLACEHOLDER — one-line problem statement]',
-    tags: ['C#', '.NET'],
-    size: 'sm',
-    href: 'https://github.com/[PLACEHOLDER]',
-  },
-  {
-    name: '[PLACEHOLDER — Project Seven]',
-    problem: '[PLACEHOLDER — one-line problem statement]',
-    tags: ['TypeScript', 'Next.js'],
-    size: 'lg',
-    href: 'https://github.com/[PLACEHOLDER]',
   },
 ]
 
 export const skills = [
-  {
-    category: 'Languages',
-    items: ['Python', 'Swift', 'Java', 'C/C++', 'JavaScript/TypeScript', 'SQL', 'Haskell', 'HTML/CSS'],
-  },
-  {
-    category: 'Frameworks',
-    items: ['React', 'Next.js', 'Node.js', 'Express.js', 'Django', 'FastAPI', 'React Native', 'SwiftUI', 'Tailwind CSS', 'PyTorch', 'Scikit-Learn'],
-  },
-  {
-    category: 'Cloud & DevOps',
-    items: ['AWS (Lambda, DynamoDB, EC2, S3)', 'GCP (Vertex AI, Cloud Run)', 'Docker', 'Kubernetes', 'CI/CD'],
-  },
-  {
-    category: 'Tools',
-    items: ['PostgreSQL', 'MySQL', 'MongoDB', 'Core ML', 'Create ML', 'SwiftData', 'Xcode Instruments', 'UIKit', 'iOS SDK', 'REST API Design', 'Microservices', 'RAG', 'LLM Fine-tuning', 'MVVM', 'Distributed Systems', 'Unix/Linux'],
-  },
+  { category: 'Languages', items: ['Python', 'C++', 'C', 'Rust', 'Go', 'Java', 'C#/.NET', 'Swift', 'JavaScript/TypeScript', 'SQL', 'Haskell'] },
+  { category: 'AI / ML', items: ['PyTorch', 'Scikit-learn', 'RAG', 'LLM Fine-Tuning', 'Model Context Protocol (MCP)'] },
+  { category: 'Frameworks & Backend', items: ['React', 'Next.js', 'Node.js', 'Express.js', 'Django', 'FastAPI', 'REST API Design'] },
+  { category: 'Cloud & DevOps', items: ['AWS', 'GCP', 'Docker', 'Kubernetes', 'CI/CD', 'Distributed Systems', 'Unix/Linux'] },
+  { category: 'Databases', items: ['PostgreSQL', 'MySQL', 'MongoDB'] },
+  { category: 'Apple & Mobile', items: ['SwiftUI', 'SwiftData', 'Core ML', 'Create ML', 'Xcode Instruments', 'UIKit', 'iOS SDK', 'MVVM'] },
 ]
